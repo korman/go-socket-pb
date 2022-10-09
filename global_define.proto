@@ -13,3 +13,8 @@ message InputText {
   string text = 1;
   Node inputNode = 2;
 }
+
+message MapInfo {
+  int width = 1;
+  int height = 2;
+}

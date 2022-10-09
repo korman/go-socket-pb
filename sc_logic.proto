@@ -6,8 +6,11 @@ package server;
 
 import "pb/global_define.proto";
 
-message OtherLockNode { repeated Node lockNode = 1; }
-
 message OtherInputText {
   repeated InputText inputText = 1;
+}
+
+message UpdateNodes {
+  MapInfo map = 1;
+  repeated Node lockNodes = 2;
 }
