@@ -6,11 +6,10 @@ package server;
 
 import "pb/global_define.proto";
 
-message OtherInputText {
-  repeated InputText inputText = 1;
+message InitMapInfo {
+  MapInfo info = 1;
 }
 
 message UpdateNodes {
-  MapInfo map = 1;
-  repeated Node lockNodes = 2;
+  repeated Node lockNodes = 1;
 }
