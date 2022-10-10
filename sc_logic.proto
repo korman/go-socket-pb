@@ -6,10 +6,12 @@ package server;
 
 import "pb/global_define.proto";
 
+// 11
 message InitMapInfo {
   MapInfo info = 1;
 }
 
+// 12
 message UpdateNodes {
-  repeated Node lockNodes = 1;
+  repeated Node nodes = 1;
 }

@@ -4,6 +4,8 @@ option go_package = "../server";
 
 package server;
 
+// 1
 message SayReq { string text = 1; }
 
+// 1
 message SayReply { string text = 1; }

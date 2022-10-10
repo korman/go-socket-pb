@@ -16,27 +16,33 @@ enum LockResult {
   LOCK_FAILED = 1;
 }
 
+// 2
 message RegisterReq {
   string name = 1;
   string pass = 2;
 }
 
+// 2
 message RegisterReply {
   RegisterResult result = 1;
   string errorMessage = 2;
 }
 
+// 3
 message LockNodeReq { Node lockNode = 1; }
 
+// 3
 message LockNodeReply {
   LockResult result = 1;
   string errorMessage = 2;
 }
 
+// 4
 message InputTextReq {
   InputText inputText = 1;
 }
 
+// 4
 message InputTextReply {
   LockResult result = 1;
   string errorMessage = 2;
