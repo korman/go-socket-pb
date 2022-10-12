@@ -9,6 +9,7 @@ import "pb/global_define.proto";
 // 11
 message InitMapInfo {
   MapInfo info = 1;
+  repeated currentNodes = 2;
 }
 
 // 12

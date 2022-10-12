@@ -24,26 +24,35 @@ message RegisterReq {
 
 // 2
 message RegisterReply {
-  RegisterResult result = 1;
-  string errorMessage = 2;
+  string token = 1;
+  RegisterResult result = 2;
+  string errorMessage = 3;
 }
 
 // 3
-message LockNodeReq { Node lockNode = 1; }
+message LockNodeReq { 
+  string token = 1;
+  Node lockNode = 2;
+}
 
 // 3
 message LockNodeReply {
-  LockResult result = 1;
-  string errorMessage = 2;
+  Node lockedNode = 1;
+  LockResult result = 2;
+  string errorMessage = 3;
+  string token = 4;
 }
 
 // 4
 message InputTextReq {
-  InputText inputText = 1;
+  Node inputNode = 1;
+  string token = 2;
 }
 
 // 4
 message InputTextReply {
-  LockResult result = 1;
-  string errorMessage = 2;
+  Node inputedNode = 1;
+  LockResult result = 2;
+  string errorMessage = 3;
+  string token = 4;
 }
