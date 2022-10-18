@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-option go_package = "../server";
+option go_package = "../gate";
 
-package server;
+package gate;
 
-import "pb/global_define.proto";
+import "gate/global_define.proto";
 
 // 11
 message InitMapInfo {
