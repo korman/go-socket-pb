@@ -2,7 +2,7 @@ syntax = "proto3";
 
 option go_package = "../gate";
 
-package gate;
+package gate_server;
 
 import "gate/global_define.proto";
 
