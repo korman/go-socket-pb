@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option go_package = "../grpc_server";
+package grpc_server;
+
+message DoTestReq {
+	string text = 1;
+}
+
+message DoTestResp {
+	int32 result = 1;
+}
+
+service UserCenter {
+	rpc DoTest(DoTestReq) returns (DoTestResp);
+}
