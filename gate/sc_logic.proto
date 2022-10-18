@@ -4,7 +4,7 @@ option go_package = "../gate";
 
 package gate_server;
 
-import "gate/global_define.proto";
+import "global_define.proto";
 
 // 11
 message InitMapInfo {
